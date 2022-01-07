@@ -3,14 +3,15 @@ import React from "react";
 export default class ChatBox extends React.Component {
   render() {
     return (
-      <div>
-        <span
-          style={{ border: this.props.isThisMe ? "1px solid green" : null }}
+      <div className = { this.props.isThisMe ? "this-is-me message-div" : "message-div" } >
+        <span className="user"
+          style={{ color: this.props.isThisMe ? "grey" : null}}
+  
         >
           {this.props.author.username}
         </span>
         <div style={{ color: this.props.author.color }}>
-          <p>{this.props.message}</p>
+          <p className="message">{this.props.message}</p>
         </div>
       </div>
     );

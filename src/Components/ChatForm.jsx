@@ -14,7 +14,7 @@ export default function ChatForm({onMessageSent}) {
   return (
     <div>
       <form onSubmit={(e) => submitMessage(e)}>
-        <input
+        <input className="input"
           onChange={(e) => setText(e.target.value)}
           type="text"
           placeholder="Type something"
