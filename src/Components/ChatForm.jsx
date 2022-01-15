@@ -13,14 +13,14 @@ export default function ChatForm({onMessageSent}) {
 
   return (
     <div>
-      <form onSubmit={(e) => submitMessage(e)}>
+      <form  onSubmit={(e) => submitMessage(e)}>
         <input className="input"
           onChange={(e) => setText(e.target.value)}
           type="text"
           placeholder="Type something"
           value={text}
         ></input>
-        <button className="btn btn-secondary" type="submit">
+        <button className="button btn btn-outline-dark" type="submit">
           Send
         </button>
       </form>

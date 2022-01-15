@@ -1,12 +1,25 @@
 import React from "react";
 
 export default class ChatBox extends React.Component {
+  
+  componentDidMount() {
+    this.scrollToBottom();
+  }
+
+  componentDidUpdate() {
+    this.scrollToBottom();
+  }
+
+  scrollToBottom() {
+    this.em.scrollIntoView({ behavior: 'smooth' });
+  }
+
+
   render() {
     return (
-      <div className = { this.props.isThisMe ? "this-is-me message-div" : "message-div" } >
+      <div ref={em => { this.em = em; }} className = { this.props.isThisMe ? "this-is-me message-div" : "message-div" } >
         <span className="user"
           style={{ color: this.props.isThisMe ? "grey" : null}}
-  
         >
           {this.props.author.username}
         </span>

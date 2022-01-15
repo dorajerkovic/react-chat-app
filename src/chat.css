@@ -6,9 +6,17 @@
     border: 1px solid red;
 }
 
+.title {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3em;
+}
 
 body{
-    background-color: rgb(238, 219, 255);
+    background: #C9D6FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
     width: 100vw;
     height: 100vh;
 }
@@ -17,35 +25,51 @@ body{
     position: fixed;
     margin: 10%;
     width: 80%;
-    height: 450px;
+    height: 350px;
 
 }
 
 .main-window {
-    border:1px solid cadetblue;
+    border-radius: 20px;
     padding: 3%;
     margin: 2rem auto auto auto;
     width: 600px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.616);
+    box-shadow: 0px 0px 5px 0.5px rgba(69, 90, 104, 0.493);
+    backdrop-filter: blur(35px);
     overflow-y: scroll;
     height: 100%;
 
 }
 
+.input {
+    width: fit-content;
+    min-width: 400px;
+    border: none;
+    border-bottom: 2px solid rgba(5, 2, 27, 0.89);
+    background-color: rgba(255, 255, 255, 0);
+    height: 40px;
+}
 
+input:focus{
+    outline: none;
+}
 
-.input{
-    width: 300px;
+.input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(0, 0, 0);
+    opacity: 1; /* Firefox */
 }
 
 .message{
-    border: 2px solid tomato;
-    border-radius: 15px;
+    border-radius: 10px;
     width: fit-content;
+    max-width: 200px;
     padding: 10px;
+    background-color: rgba(255, 255, 255, 0.062);
+    box-shadow: 0px 0px 1px 0.2px rgba(69, 90, 104, 0.493);
 }
 
 .this-is-me{
@@ -58,4 +82,9 @@ body{
 
 .chat-form {
     text-align: center;
+    margin-top: 20px;
+}
+
+.user {
+     font-size: 12px;
 }

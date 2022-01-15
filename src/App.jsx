@@ -85,14 +85,15 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="app">
-      <div className="main-window">
-        <div className="chat-window">
-        <ChatWindow
-          messages={this.state.messages}
-          user={this.state.currentUser}
-        />  
+        <div className="title">My Chat App</div>
+        <div className="main-window">
+          <div className="chat-window">
+          <ChatWindow
+            messages={this.state.messages}
+            user={this.state.currentUser}
+          />  
+          </div>
         </div>
-      </div>
         <div className="chat-form">
           <ChatForm onMessageSent={this.onMessageSent} />
         </div>
