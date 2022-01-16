@@ -10,12 +10,15 @@
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 3em;
+    color: rgb(253, 251, 255);
+    text-shadow: 0.3px 0.3px 3px  #40376d8e;;
 }
 
 body{
-    background: #C9D6FF;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #314755;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom right, #5ec3f1, #478db9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom right, #68c0e9, #3d7699); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     
     width: 100vw;
     height: 100vh;
@@ -37,43 +40,47 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.616);
-    box-shadow: 0px 0px 5px 0.5px rgba(69, 90, 104, 0.493);
+    background-color: rgba(255, 255, 255, 0.822);
+    box-shadow: 0px 0px 4px 0.1px rgba(12, 35, 51, 0.856);
     backdrop-filter: blur(35px);
     overflow-y: scroll;
     height: 100%;
 
 }
 
+
 .input {
     width: fit-content;
     min-width: 400px;
     border: none;
-    border-bottom: 2px solid rgba(5, 2, 27, 0.89);
+    border-bottom: 2px solid rgb(255, 255, 255);
     background-color: rgba(255, 255, 255, 0);
     height: 40px;
 }
 
 input:focus{
     outline: none;
+    color: white;
 }
 
 .input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     opacity: 1; /* Firefox */
 }
 
 .message{
     border-radius: 10px;
     width: fit-content;
-    max-width: 200px;
+    max-width: 350px;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.062);
+    background-color: rgba(255, 255, 255, 0);
     box-shadow: 0px 0px 1px 0.2px rgba(69, 90, 104, 0.493);
+    text-align: left;
 }
 
 .this-is-me{
     margin: auto 0 auto auto;
+    text-align: right;
 }
 
 .message-div{
@@ -87,4 +94,6 @@ input:focus{
 
 .user {
      font-size: 12px;
+     margin: 5px;
+
 }
