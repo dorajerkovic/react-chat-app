@@ -87,7 +87,7 @@ export default class App extends React.Component {
       <div className="app">
         <div className="title">My Chat App</div>
         <div className="main-window">
-          <div className="chat-window">
+          <div className="chat-window" >
           <ChatWindow
             messages={this.state.messages}
             user={this.state.currentUser}

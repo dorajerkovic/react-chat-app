@@ -28,7 +28,7 @@ body{
     position: fixed;
     margin: 10%;
     width: 80%;
-    height: 350px;
+    height: 300px;
 
 }
 
@@ -47,6 +47,17 @@ body{
     height: 100%;
 
 }
+
+.chat-window{
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    padding: 0 4px 0 4px;
+}
+
+.chat-window::-webkit-scrollbar {
+    display: none;
+  }
 
 
 .input {

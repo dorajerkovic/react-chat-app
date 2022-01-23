@@ -5,7 +5,7 @@ export default function ChatForm({onMessageSent}) {
 
   const submitMessage = (e) => {
     e.preventDefault();
-    onMessageSent(text);
+    onMessageSent(text.trim());
     setText("");
   };
 

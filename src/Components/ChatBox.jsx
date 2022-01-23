@@ -1,6 +1,8 @@
 import React from "react";
 
 export default class ChatBox extends React.Component {
+
+
   
   componentDidMount() {
     this.scrollToBottom();
@@ -11,7 +13,8 @@ export default class ChatBox extends React.Component {
   }
 
   scrollToBottom() {
-    this.em.scrollIntoView({ behavior: 'smooth' });
+    this.em.scrollIntoView({ behavior: 'smooth'});
+    this.em.scrollTop -= 10;
   }
 
 
